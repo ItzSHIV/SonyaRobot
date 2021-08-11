@@ -19,7 +19,7 @@ async def song(client, message):
         await message.reply("<b>Enter song name❗</b>")
         return ""
     m = await message.reply_text(
-        "Downloading your song,\nPlz wait ⏳️"
+        "Downloading your song,\nPlease wait ⏳️"
     )
     try:
         r = requests.get(f"https://jevcplayerbot-saavndl.herokuapp.com/result/?query={args}")
