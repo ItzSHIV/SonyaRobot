@@ -25,7 +25,7 @@ async def ai_amelia(url):
     return ai_name
 
 
-@LYCIA.on_message(filters.command("Amelia"))
+@LYCIA.on_message(filters.command("Sonya"))
 async def Lycia(_, message):
     if len(message.command) < 2:
         await message.reply_text("Lycia AI Voice Chatbot")
@@ -41,7 +41,7 @@ async def Lycia(_, message):
     except Exception as e:
         await m.edit(str(e))
         return
-    await m.edit("Made By @itsmelegend...")
+    await m.edit("Made By @ImTheekshana...")
     LyciaVoice = await ai_lycia(VoiceAi)
     await m.edit("Repyping...")
     await message.reply_audio(audio=LyciaVoice, title=chatbot, performer=name)
